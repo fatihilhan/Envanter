@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.375, 10.375" name="Database">
+  <DataContextMoniker Name="/DatabaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b0310a22-419b-421a-ad40-58e47bc15446" absoluteBounds="0.75, 5.5, 2, 4.4631168618798256">
+      <DataClassMoniker Name="/DatabaseDataContext/Cariler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b728583d-2a32-4ee6-a5ef-0c83b3d8ae7f" absoluteBounds="0.76500000059604645, 5.96000000089407, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="921e1351-5362-4877-ab66-f84499f7d81f" absoluteBounds="6.125, 6.25, 2, 2.1554996743798256">
+      <DataClassMoniker Name="/DatabaseDataContext/Depolar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4411955d-599d-48d3-9e50-76d1daf07b6e" absoluteBounds="6.1400000005960464, 6.71000000089407, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="789023cd-f119-4a19-aa5c-d7ae8e899747" absoluteBounds="0.75, 2.25, 2, 2.1554996743798256">
+      <DataClassMoniker Name="/DatabaseDataContext/StokGruplari" />
+      <nestedChildShapes>
+        <elementListCompartment Id="376ebb52-5a61-433b-9c56-92f60af3b6f6" absoluteBounds="0.76500000059604645, 2.7100000008940697, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a42189d3-7e29-4b99-a4bb-44f8872d0db8" absoluteBounds="3.5, 2.125, 2, 2.3478011060506105">
+      <DataClassMoniker Name="/DatabaseDataContext/StokKartlari" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a16e5d6-22ef-4c72-a1a9-5a21f92fc689" absoluteBounds="3.5150000005960464, 2.5850000008940697, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 3.32774983718991); (3.5 : 3.32774983718991)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/StokGruplari/StokGruplari_StokKartlari" />
+      <nodes>
+        <classShapeMoniker Id="789023cd-f119-4a19-aa5c-d7ae8e899747" />
+        <classShapeMoniker Id="a42189d3-7e29-4b99-a4bb-44f8872d0db8" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="02d0e952-fcb4-49fa-a927-8f2337d49d30" isExpanded="false" absoluteBounds="9.125, 1, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/DatabaseDataContext/VW_StokHareketleri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9bbe3948-c36f-4a20-82b7-2a4b57e63d75" absoluteBounds="9.14, 1.4600000000000009, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="595ef7bf-3da1-479a-bd00-f786e192cf84" absoluteBounds="3.5, 5.5, 2, 4.6554182935506105">
+      <DataClassMoniker Name="/DatabaseDataContext/Kurumlar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="92ddc2f7-0a63-4b1d-ae90-6e30ca7216e2" absoluteBounds="3.5150000005960464, 5.96000000089407, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 7.73155843093991); (3.5 : 7.73155843093991)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DatabaseDataContext/Cariler/Cariler_Kurumlar" />
+      <nodes>
+        <classShapeMoniker Id="b0310a22-419b-421a-ad40-58e47bc15446" />
+        <classShapeMoniker Id="595ef7bf-3da1-479a-bd00-f786e192cf84" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c27d3ed4-c087-497e-95a9-f4f604a5c219" absoluteBounds="9, 1.875, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/DatabaseDataContext/StokHareketleri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="34a14d47-82f4-44c2-b2a5-6d2b72760fd7" absoluteBounds="9.015, 2.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 5.53125); (9.09375 : 5.53125); (9.09375 : 4.79970540364583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DatabaseDataContext/Kurumlar/Kurumlar_StokHareketleri" />
+      <nodes>
+        <classShapeMoniker Id="595ef7bf-3da1-479a-bd00-f786e192cf84" />
+        <classShapeMoniker Id="c27d3ed4-c087-497e-95a9-f4f604a5c219" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="01bb3b34-3d7a-41a8-a901-66337798914a" absoluteBounds="12, 1.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DatabaseDataContext/VW_Yetkiler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5bdb4380-2878-4ce4-81ac-b39b72a5124a" absoluteBounds="12.015, 1.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0683a49-90c2-4c5d-8ce9-d8941e335e08" absoluteBounds="12.125, 5.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DatabaseDataContext/KullaniciRol" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e7b9b3a-f61b-4f0c-8f00-1f6c6da0382b" absoluteBounds="12.14, 6.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e9a8929d-e316-4f58-8884-c4373d5f13e7" absoluteBounds="12.125, 8.125, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/DatabaseDataContext/Roller" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ebbabd80-580f-4bb5-896d-80b34789e66c" absoluteBounds="12.14, 8.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(13.125 : 8.125); (13.125 : 7.45359537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DatabaseDataContext/Roller/Roller_KullaniciRol" />
+      <nodes>
+        <classShapeMoniker Id="e9a8929d-e316-4f58-8884-c4373d5f13e7" />
+        <classShapeMoniker Id="d0683a49-90c2-4c5d-8ce9-d8941e335e08" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="5c5aa842-93c8-4888-a524-74169c9e2bcc" absoluteBounds="9.375, 8.125, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DatabaseDataContext/Kullanicilar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="451d4e36-4aa0-443c-a618-0ed5e13f155a" absoluteBounds="9.39, 8.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.34375 : 8.125); (11.34375 : 7.35984537760417); (12.125 : 7.35984537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DatabaseDataContext/Kullanicilar/Kullanicilar_KullaniciRol" />
+      <nodes>
+        <classShapeMoniker Id="5c5aa842-93c8-4888-a524-74169c9e2bcc" />
+        <classShapeMoniker Id="d0683a49-90c2-4c5d-8ce9-d8941e335e08" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d91867af-7a04-4e04-83a6-dd1a9008b539" absoluteBounds="9.25, 5.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DatabaseDataContext/KullaniciDepoYetki" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e5afce4-dda9-4e07-a66b-62ce9da9c22c" absoluteBounds="9.265, 6.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.125 : 6.80210611979167); (9.25 : 6.80210611979167)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DatabaseDataContext/Depolar/Depolar_KullaniciDepoYetki" />
+      <nodes>
+        <classShapeMoniker Id="921e1351-5362-4877-ab66-f84499f7d81f" />
+        <classShapeMoniker Id="d91867af-7a04-4e04-83a6-dd1a9008b539" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.3125 : 8.125); (10.3125 : 7.20359537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DatabaseDataContext/Kullanicilar/Kullanicilar_KullaniciDepoYetki" />
+      <nodes>
+        <classShapeMoniker Id="5c5aa842-93c8-4888-a524-74169c9e2bcc" />
+        <classShapeMoniker Id="d91867af-7a04-4e04-83a6-dd1a9008b539" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a78b902f-bcaa-4df7-8e05-b26ba63716e5" absoluteBounds="12.125, 3.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DatabaseDataContext/VW_KullaniciDepo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ecc95d0a-bb2e-4a55-a15a-81a86a9fd97b" absoluteBounds="12.14, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="512bed65-a237-4913-a2bc-bc50f8d5eb66" absoluteBounds="6.25, 0.625, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/DatabaseDataContext/Stoklar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="815aeef1-eb2d-4296-8fc6-906862cd69d0" absoluteBounds="6.265, 1.085, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.25 : 3.33735270182292); (9 : 3.33735270182292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/Stoklar/Stoklar_StokHareketleri" />
+      <nodes>
+        <classShapeMoniker Id="512bed65-a237-4913-a2bc-bc50f8d5eb66" />
+        <classShapeMoniker Id="c27d3ed4-c087-497e-95a9-f4f604a5c219" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.1875 : 6.25); (7.1875 : 5.08811686197917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DatabaseDataContext/Depolar/Depolar_Stoklar" />
+      <nodes>
+        <classShapeMoniker Id="921e1351-5362-4877-ab66-f84499f7d81f" />
+        <classShapeMoniker Id="512bed65-a237-4913-a2bc-bc50f8d5eb66" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 3.29890055302531); (6.25 : 3.29890055302531)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DatabaseDataContext/StokKartlari/StokKartlari_Stoklar" />
+      <nodes>
+        <classShapeMoniker Id="a42189d3-7e29-4b99-a4bb-44f8872d0db8" />
+        <classShapeMoniker Id="512bed65-a237-4913-a2bc-bc50f8d5eb66" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.95923076923077 : 0.625); (6.95923076923077 : 0.375); (7.55461538461539 : 0.375); (7.55461538461539 : 0.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DatabaseDataContext/Stoklar/Stoklar_Stoklar" />
+      <nodes>
+        <classShapeMoniker Id="512bed65-a237-4913-a2bc-bc50f8d5eb66" />
+        <classShapeMoniker Id="512bed65-a237-4913-a2bc-bc50f8d5eb66" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b7a63e40-9dca-4e12-9d3f-9c64ae9ddc5f" isExpanded="false" absoluteBounds="9.125, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/DatabaseDataContext/VW_Oem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e9335536-f2e1-4843-8adb-600c658d5bc4" absoluteBounds="9.14, 0.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
